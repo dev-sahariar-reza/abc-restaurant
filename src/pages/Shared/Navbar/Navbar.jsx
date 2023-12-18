@@ -1,12 +1,14 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const navItem = (
+  const navRoute = (
     <>
       <li>
         <NavLink
           to="/"
-          className={({ isActive }) => (isActive ? "active" : "")}
+          className={({ isActive }) =>
+            isActive ? "abc-active" : "abc-not-active"
+          }
         >
           Home
         </NavLink>
@@ -14,15 +16,19 @@ const Navbar = () => {
       <li>
         <NavLink
           to="/menu"
-          className={({ isActive }) => (isActive ? "active" : "")}
+          className={({ isActive }) =>
+            isActive ? "abc-active" : "abc-not-active"
+          }
         >
           Our Menu
         </NavLink>
       </li>
       <li>
         <NavLink
-          to="/menu"
-          className={({ isActive }) => (isActive ? "active" : "")}
+          to="/contact"
+          className={({ isActive }) =>
+            isActive ? "abc-active" : "abc-not-active"
+          }
         >
           Contact
         </NavLink>
@@ -30,7 +36,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar fixed z-10 bg-opacity-30 bg-black text-white">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -49,17 +55,16 @@ const Navbar = () => {
               />
             </svg>
           </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            {navItem}
+          <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black rounded-box w-52">
+            {navRoute}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">ABC Restaurant</a>
+        <Link to="/" className="text-lg md:text-xl lg:text-2xl font-bold">
+          ABC Restaurant
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{navItem}</ul>
+        <ul className="menu menu-horizontal px-1">{navRoute}</ul>
       </div>
       <div className="navbar-end">
         <a className="btn">Button</a>

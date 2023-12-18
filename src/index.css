@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* common css */
+* {
+  font-family: "Poppins", sans-serif;
+}
+.abc-container {
+  @apply container mx-auto my-10;
+}
+
+/* Navbar style */
+.abc-active {
+  @apply text-base md:text-lg lg:text-xl font-semibold text-blue-400 underline;
+}
+.abc-not-active {
+  @apply text-base md:text-lg font-semibold;
+}
