@@ -58,3 +58,8 @@
 .abc-home-categories-image-text {
   @apply my-4 text-xl md:text-2xl text-center font-bold;
 }
+
+/* Home Chef Recommendation Design */
+.abc-home-chef-recommend-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 my-10;
+}
