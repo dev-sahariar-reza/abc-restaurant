@@ -17,3 +17,29 @@
 .abc-not-active {
   @apply text-base md:text-lg font-semibold;
 }
+
+/* Footer style */
+.abc-footer-grid {
+  @apply grid grid-cols-1 lg:grid-cols-2;
+}
+.abc-footer-box-1 {
+  @apply bg-[#1F2937] text-center text-white p-8;
+}
+.abc-footer-box-2 {
+  @apply bg-[#111827] text-center text-white p-8;
+}
+.abc-footer-title {
+  @apply uppercase text-lg md:text-xl lg:text-2xl mb-4;
+}
+.abc-footer-text {
+  @apply text-lg mb-3;
+}
+.abc-footer-icon-box {
+  @apply flex justify-center items-center;
+}
+.abc-footer-icon-box span {
+  @apply mr-4 mt-4;
+}
+.abc-footer-copyright {
+  @apply text-white text-center text-base bg-black p-3;
+}
