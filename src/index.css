@@ -7,7 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 .abc-container {
-  @apply container mx-auto my-10;
+  @apply container mx-auto my-14;
+}
+.abc-section-title {
+  @apply text-center text-2xl lg:text-4xl font-bold mb-8;
 }
 
 /* Navbar style */
@@ -42,4 +45,16 @@
 }
 .abc-footer-copyright {
   @apply text-white text-center text-base bg-black p-3;
+}
+
+/* Home Page Design */
+/* Home Categories Design */
+.abc-home-categories-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6;
+}
+.abc-home-categories-image-box {
+  @apply flex flex-col justify-center items-center;
+}
+.abc-home-categories-image-text {
+  @apply my-4 text-xl md:text-2xl text-center font-bold;
 }
