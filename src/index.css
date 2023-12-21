@@ -10,7 +10,7 @@
   @apply container mx-auto my-14;
 }
 .abc-section-title {
-  @apply text-center text-2xl lg:text-4xl font-bold mb-8;
+  @apply text-center text-2xl lg:text-4xl font-bold mb-8 uppercase;
 }
 
 /* Navbar style */
@@ -68,4 +68,12 @@
 }
 .call-us-text {
   @apply text-white text-center text-xl md:text-2xl lg:text-3xl font-bold uppercase;
+}
+
+/* Home About Us Design */
+.abc-about-us-grid {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-6 items-center;
+}
+.abc-about-us-text {
+  @apply text-xl text-justify;
 }
