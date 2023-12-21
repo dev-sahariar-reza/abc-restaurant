@@ -63,3 +63,9 @@
 .abc-home-chef-recommend-grid {
   @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 my-10;
 }
+.call-us-box {
+  @apply bg-black p-8 my-10;
+}
+.call-us-text {
+  @apply text-white text-center text-xl md:text-2xl lg:text-3xl font-bold uppercase;
+}

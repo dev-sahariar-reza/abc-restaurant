@@ -15,10 +15,19 @@ const ChefRecommend = () => {
   return (
     <section className="abc-container">
       <h1 className="abc-section-title">Chef Recommendation</h1>
+
       <div className="abc-home-chef-recommend-grid">
         {menu.map((item) => (
           <HomeCard key={item._id} item={item} />
         ))}
+      </div>
+
+      <div className="text-center">
+        <button className="btn btn-outline">View Full Menu</button>
+      </div>
+
+      <div className="call-us-box">
+        <h1 className="call-us-text">call us: +88-01740759249</h1>
       </div>
     </section>
   );
