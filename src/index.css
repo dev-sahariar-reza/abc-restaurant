@@ -77,3 +77,11 @@
 .abc-about-us-text {
   @apply text-xl text-justify;
 }
+
+/* Home Testimonial design & Review Card Component design */
+.review-card {
+  @apply p-6 shadow-xl w-72 h-[650px] mr-5;
+}
+.reviewer-name {
+  @apply my-4 font-bold text-lg;
+}
