@@ -85,3 +85,11 @@
 .reviewer-name {
   @apply my-4 font-bold text-lg;
 }
+
+/* Our Menu Page Design */
+.menu-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 container mx-auto my-10;
+}
+.menu-heading {
+  @apply my-8 text-center text-xl md:text-2xl lg:text-3xl font-bold;
+}

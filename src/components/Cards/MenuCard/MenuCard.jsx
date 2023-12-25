@@ -1,9 +1,9 @@
-const HomeCard = ({ item }) => {
+const MenuCard = ({ item }) => {
   const { _id, name, recipe, image, category, price } = item;
   return (
-    <div className="card shadow-2xl">
+    <div className="card w-96 bg-base-100 shadow-xl">
       <figure>
-        <img src={image} alt="image of food" loading="lazy" />
+        <img src={image} alt="Shoes" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{name}</h2>
@@ -16,4 +16,4 @@ const HomeCard = ({ item }) => {
   );
 };
 
-export default HomeCard;
+export default MenuCard;
