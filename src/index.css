@@ -93,3 +93,9 @@
 .menu-heading {
   @apply my-8 text-center text-xl md:text-2xl lg:text-3xl font-bold;
 }
+.menu-button-box {
+  @apply text-center;
+}
+.menu-button {
+  @apply btn btn-outline my-7;
+}
